@@ -1,16 +1,18 @@
-# travelnews
+# Travel News
 
-A new Flutter project.
+Welcome to "Travel News," a visually engaging Flutter UI app designed. 
 
-## Getting Started
+## 🌱 Design : 
+https://www.figma.com/community/file/1165219160023778067
 
-This project is a starting point for a Flutter application.
+## 💬 Library :
+- flutter_screenutil: ^5.9.0
+- google_fonts: ^6.1.0
+- provider: ^6.1.1
+- svg_flutter: ^0.0.1
 
-A few resources to get you started if this is your first Flutter project:
+## 💬 Preview :
+<img alt="preview" width="400" src="">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 💰 You can help me by Donating
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/ilhamhidayatullah) 
