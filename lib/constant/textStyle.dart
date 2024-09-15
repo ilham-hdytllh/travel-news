@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextStyle {
   static TextStyle text1 = GoogleFonts.poppins(
-    fontSize: 28,
+    fontSize: 32,
   );
   static TextStyle text2 = GoogleFonts.poppins(
     fontSize: 20,

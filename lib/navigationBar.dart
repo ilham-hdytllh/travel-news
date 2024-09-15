@@ -4,6 +4,7 @@ import 'package:travelnews/provider/pageController.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:svg_flutter/svg_flutter.dart';
+import 'package:travelnews/view/detail/detail.dart';
 import 'package:travelnews/view/home/home.dart';
 
 class MyNavigationBar extends StatefulWidget {
@@ -40,11 +41,11 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
         },
         physics: const NeverScrollableScrollPhysics(),
         controller: _pageController,
-        children: const [
-          Home(),
-          SizedBox(),
-          SizedBox(),
-          SizedBox(),
+        children: [
+          Detail(),
+          const SizedBox(),
+          const SizedBox(),
+          const SizedBox(),
         ],
       ),
       bottomNavigationBar: SizedBox(
