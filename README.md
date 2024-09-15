@@ -14,5 +14,7 @@ https://www.figma.com/community/file/1165219160023778067
 ## 💬 Preview :
 <img alt="preview" width="400" src="https://github.com/ilham-hdytllh/travel-news/blob/main/assets/preview/travel-news.jpeg">
 
-## 💰 You can help me by Donating
-[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/ilhamhidayatullah) 
+## 💰 Support :
+<p><a href="https://www.buymeacoffee.com/ilhamhidayatullah"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="ilhamhidayatullah" /></a><a href="https://ko-fi.com/ilhamhidayatullah"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="ilhamhidayatullah" /></a></p>
+<br><br>
+
