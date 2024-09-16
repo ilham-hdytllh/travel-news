@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:svg_flutter/svg_flutter.dart';
 import 'package:travelnews/constant/colors.dart';
 import 'package:travelnews/constant/textStyle.dart';
@@ -43,41 +44,59 @@ class _DetailState extends State<Detail> {
               left: 0,
               right: 0,
               child: SizedBox(
-                height: 600,
+                height: 500,
                 width: double.infinity,
-                child: CarouselSlider(
-                  items: images,
-                  options: CarouselOptions(
-                    height: 600,
-                    viewportFraction: 1,
-                    initialPage: 0,
-                    enableInfiniteScroll: true,
-                    reverse: false,
-                    autoPlay: false,
-                    onPageChanged: (int index, callback) {
-                      active = index;
-                    },
-                    scrollDirection: Axis.horizontal,
-                  ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      child: CarouselSlider(
+                        items: images,
+                        options: CarouselOptions(
+                          height: 500,
+                          viewportFraction: 1,
+                          initialPage: 0,
+                          enableInfiniteScroll: true,
+                          reverse: false,
+                          autoPlay: false,
+                          onPageChanged: (int index, callback) {
+                            setState(() {
+                              active = index;
+                            });
+                          },
+                          scrollDirection: Axis.horizontal,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: 170,
+                      child: Center(
+                        child: SizedBox(
+                          height: 20,
+                          child: ListView.builder(
+                              physics: const NeverScrollableScrollPhysics(),
+                              shrinkWrap: true,
+                              scrollDirection: Axis.horizontal,
+                              itemCount: images.length,
+                              itemBuilder: (context, index) {
+                                return Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 3),
+                                  child: SvgPicture.asset(index == active
+                                      ? "assets/icons/circle_active.svg"
+                                      : "assets/icons/circle.svg"),
+                                );
+                              }),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ),
-            ),
-            Positioned(
-              top: (MediaQuery.of(context).size.height / 2) - 20,
-              left: 0,
-              right: 0,
-              bottom: (MediaQuery.of(context).size.height / 2) + 20,
-              child: Center(
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      if (index == active) {
-                        return SvgPicture.asset(
-                            "assets/images/circle_active.svg");
-                      } else {
-                        return SvgPicture.asset("assets/images/circle.svg");
-                      }
-                    }),
               ),
             ),
             Positioned(
@@ -126,7 +145,7 @@ class _DetailState extends State<Detail> {
               ),
             ),
             Positioned(
-              top: 400,
+              top: 350,
               left: 0,
               right: 0,
               bottom: 0,

@@ -1,7 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:svg_flutter/svg_flutter.dart';
 import 'package:travelnews/constant/colors.dart';
 import 'package:travelnews/constant/textStyle.dart';
+import 'package:travelnews/view/detail/detail.dart';
 import 'package:travelnews/view/home/widgets/posting_card.dart';
 import 'package:travelnews/view/home/widgets/video_card.dart';
 
@@ -181,22 +184,34 @@ class Home extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 20),
                 scrollDirection: Axis.horizontal,
                 physics: const BouncingScrollPhysics(),
-                children: const [
-                  PostingCard(
-                    postingTitle:
-                        "Feel the thrill on the only\nsurf simulator in Maldives 2022",
-                    postingDate: "Sep 9, 2022",
-                    postingImage: "assets/images/destination1.png",
-                    postingAuthorName: "Sang Dong-Min",
-                    postingAuthorImage: "assets/images/account_post1.png",
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const Detail()));
+                    },
+                    child: const PostingCard(
+                      postingTitle:
+                          "Feel the thrill on the only\nsurf simulator in Maldives 2022",
+                      postingDate: "Sep 9, 2022",
+                      postingImage: "assets/images/destination1.png",
+                      postingAuthorName: "Sang Dong-Min",
+                      postingAuthorImage: "assets/images/account_post1.png",
+                    ),
                   ),
-                  PostingCard(
-                    postingTitle:
-                        "Hong Kong wins over Wall\nStreet CEOs after lifting strict",
-                    postingDate: "Jan 3, 2022",
-                    postingImage: "assets/images/destination2.png",
-                    postingAuthorName: "Pan Bong",
-                    postingAuthorImage: "assets/images/account_post2.png",
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const Detail()));
+                    },
+                    child: const PostingCard(
+                      postingTitle:
+                          "Hong Kong wins over Wall\nStreet CEOs after lifting strict",
+                      postingDate: "Jan 3, 2022",
+                      postingImage: "assets/images/destination2.png",
+                      postingAuthorName: "Pan Bong",
+                      postingAuthorImage: "assets/images/account_post2.png",
+                    ),
                   ),
                 ],
               ),
