@@ -106,7 +106,7 @@ class Home extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: double.infinity,
+                      height: 50,
                       width: 50,
                       decoration: BoxDecoration(
                         color: CustomColor.blue,

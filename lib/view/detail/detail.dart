@@ -1,6 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:svg_flutter/svg_flutter.dart';
 import 'package:travelnews/constant/colors.dart';
 import 'package:travelnews/constant/textStyle.dart';
